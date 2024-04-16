@@ -3,12 +3,13 @@ package vinnsla;
 public class Ticket {
     private Flight flight;
     private User user;
-    private String ticketNum;
-    private String passportNum;
+    private String ticketId;
+
     private int baggage;
 
-    public Ticket() {
-
+    public Ticket(Flight f, User u) {
+        flight = f;
+        user = u;
     }
 
     public void addBag() {
@@ -24,7 +25,7 @@ public class Ticket {
     //post: retures the String value of
     //	    ticketNum.
     public String getTickerNumber() {
-        return ticketNum;
+        return ticketId;
     }
 
     //use : getFlight();

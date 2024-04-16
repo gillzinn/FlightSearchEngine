@@ -10,38 +10,23 @@
         <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               prefHeight="300.0" prefWidth="350.0">
             <children>
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                       prefHeight="40.0" prefWidth="350.0" text="Register">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Label>
                 <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
                       minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0">
                     <children>
                         <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                               prefHeight="40.0" prefWidth="100.0" text="Spurning:" HBox.hgrow="NEVER">
+                               prefHeight="40.0" prefWidth="100.0" text="Name:" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
                         </Label>
-                        <TextField fx:id="fxSpurning" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0"
-                                   promptText="Skrifaðu Spurninguna" styleClass="Searchfield" HBox.hgrow="NEVER">
-                            <HBox.margin>
-                                <Insets/>
-                            </HBox.margin>
-                        </TextField>
-                    </children>
-                    <VBox.margin>
-                        <Insets bottom="10.0"/>
-                    </VBox.margin>
-                </HBox>
-                <HBox fillHeight="false" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
-                      minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0">
-                    <children>
-                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                               prefHeight="40.0" prefWidth="100.0" text="Svar:" HBox.hgrow="NEVER">
-                            <HBox.margin>
-                                <Insets/>
-                            </HBox.margin>
-                        </Label>
-                        <TextField fx:id="fxSvar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="Skrifaðu svarið"
+                        <TextField fx:id="fxName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="Your Name"
                                    styleClass="Searchfield" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
@@ -56,14 +41,14 @@
                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0">
                     <children>
                         <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                               prefHeight="40.0" prefWidth="100.0" text="Rangt Svar 1:" HBox.hgrow="NEVER">
+                               prefHeight="40.0" prefWidth="100.0" text="Email:" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
                         </Label>
-                        <TextField fx:id="fxRangtSvar1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        <TextField fx:id="fxEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
                                    minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0"
-                                   promptText="Skrifaðu rangt svar 1" styleClass="Searchfield" HBox.hgrow="NEVER">
+                                   promptText="example@example.com" styleClass="Searchfield" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
@@ -77,14 +62,14 @@
                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0">
                     <children>
                         <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                               prefHeight="40.0" prefWidth="100.0" text="Rangt Svar 2:" HBox.hgrow="NEVER">
+                               prefHeight="40.0" prefWidth="100.0" text="Kennitala:" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
                         </Label>
-                        <TextField fx:id="fxRangtSvar2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0"
-                                   promptText="Skrifaðu rangt svar 2" styleClass="Searchfield" HBox.hgrow="NEVER">
+                        <TextField fx:id="fxKennitala" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="Your Kennitala"
+                                   styleClass="Searchfield" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
@@ -98,14 +83,14 @@
                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0">
                     <children>
                         <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                               prefHeight="40.0" prefWidth="100.0" text="Rangt Svar 3:" HBox.hgrow="NEVER">
+                               prefHeight="40.0" prefWidth="100.0" text="Password:" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
                         </Label>
-                        <TextField fx:id="fxRangtSvar3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0"
-                                   promptText="Skrifaðu rangt svar 3" styleClass="Searchfield" HBox.hgrow="NEVER">
+                        <TextField fx:id="fxPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                   minWidth="-Infinity" prefHeight="35.0" prefWidth="200.0" promptText="Your Password"
+                                   styleClass="Searchfield" HBox.hgrow="NEVER">
                             <HBox.margin>
                                 <Insets/>
                             </HBox.margin>
@@ -115,11 +100,13 @@
                         <Insets bottom="10.0"/>
                     </VBox.margin>
                 </HBox>
+
+
             </children>
         </VBox>
     </content>
-    <ButtonType fx:id="fxILagi" buttonData="OK_DONE" text="Í lagi"/>
-    <ButtonType fx:id="fxHaettaVid" buttonData="CANCEL_CLOSE" text="Hætta við"/>
+    <ButtonType fx:id="fxILagi" buttonData="OK_DONE" text="OK"/>
+    <ButtonType fx:id="fxHaettaVid" buttonData="CANCEL_CLOSE" text="Cancel"/>
     <padding>
         <Insets left="25.0" top="25.0"/>
     </padding>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="fxAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" styleClass="Pane" stylesheets="@../stylesheets/styles.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="vidmot.ViewController">
+    <BorderPane fx:id="fxAdalBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0"
+                style="-fx-background-color: rgb(239, 240, 242); -fx-background-radius: 10 10 10 10;"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+        <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;"
+                        styleClass="topPane">
+
+                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0" pickOnBounds="true"
+                           preserveRatio="true" AnchorPane.topAnchor="22.0">
+                    <image>
+                        <Image url="@../stylesheets/Icons/plane1.png"/>
+                    </image>
+                </ImageView>
+                <HBox layoutX="32.0" layoutY="9.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0"
+                      prefWidth="350.0" AnchorPane.topAnchor="9.0">
+
+                    <Pane fx:id="fxBrowse" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" onMousePressed="#Browse" prefHeight="25.0" prefWidth="65.0"
+                          styleClass="Menu">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="65.0"
+                               text="Browse">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/layers.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets left="3.0"/>
+                            </padding>
+                        </Label>
+                        <HBox.margin>
+                            <Insets right="10.0"/>
+                        </HBox.margin>
+
+                    </Pane>
+                    <Pane fx:id="fxLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" styleClass="Selected">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100.0"
+                               text="My Account">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/user.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <padding>
+                                <Insets left="5.0" right="5.0"/>
+                            </padding>
+                        </Label>
+                    </Pane>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="10.0"/>
+                    </padding>
+                </HBox>
+
+            </AnchorPane>
+        </top>
+        <left>
+
+
+        </left>
+        <center>
+            <BorderPane fx:id="fxBorderCenter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" prefHeight="740.0" prefWidth="900.0" BorderPane.alignment="TOP_CENTER">
+                <center>
+                    <VBox fx:id="fxMidjuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" styleClass="MidjuPane"
+                          BorderPane.alignment="CENTER">
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="320.0" prefWidth="800.0">
+                            <Label fx:id="fxCredentials" text="My Account">
+                                <VBox.margin>
+                                    <Insets bottom="15.0"/>
+                                </VBox.margin>
+                                <font>
+                                    <Font name="System Bold" size="12.0"/>
+                                </font>
+
+                            </Label>
+
+                            <Label text="Name:">
+                                <VBox.margin>
+                                    <Insets bottom="2.0"/>
+                                </VBox.margin>
+                            </Label>
+                            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="25.0" prefWidth="350.0" styleClass="Search-border">
+                                <Label fx:id="fxAccountName" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="350.0"
+                                       styleClass="Searchfield"/>
+
+                            </Pane>
+                            <Label text="Email:">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" top="2.0"/>
+                                </VBox.margin>
+                            </Label>
+                            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="25.0" prefWidth="350.0" styleClass="Search-border">
+                                <Label fx:id="fxAccountEmail" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="350.0"
+                                       styleClass="Searchfield"/>
+
+                            </Pane>
+                            <Label text="Kennitala:">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" top="2.0"/>
+                                </VBox.margin>
+                            </Label>
+                            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="25.0" prefWidth="350.0" styleClass="Search-border">
+                                <Label fx:id="fxAccountKennitala" layoutY="-1.0" maxHeight="-Infinity"
+                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+                                       prefWidth="350.0" styleClass="Searchfield"/>
+
+                            </Pane>
+                            <Label text="Password:">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" top="2.0"/>
+                                </VBox.margin>
+                            </Label>
+                            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="25.0" prefWidth="350.0" styleClass="Search-border">
+                                <Label fx:id="fxAccountPassword" layoutY="-1.0" maxHeight="-Infinity"
+                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0"
+                                       prefWidth="350.0" styleClass="Searchfield"/>
+
+                            </Pane>
+
+                            <padding>
+                                <Insets bottom="25.0" left="50.0" right="50.0" top="25.0"/>
+                            </padding>
+                        </VBox>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="320.0" prefWidth="800.0">
+                            <Label text="My Bookings">
+                                <padding>
+                                    <Insets bottom="10.0"/>
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <ListView fx:id="fxTicketList" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="240.0"
+                                      prefWidth="700.0"/>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="25.0" left="50.0" right="50.0" top="25.0"/>
+                            </padding>
+                        </VBox>
+                    </VBox>
+
+
+                </center>
+            </BorderPane>
+
+        </center>
+        <right>
+
+        </right>
+
+
+    </BorderPane>
+
+</AnchorPane>

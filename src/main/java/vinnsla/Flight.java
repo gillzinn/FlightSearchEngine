@@ -2,6 +2,7 @@ package vinnsla;
 
 public class Flight {
     private Airplane airplane;
+    private String id;
     private String date;
     private String departureLocation;
     private String departure;
@@ -12,8 +13,9 @@ public class Flight {
     private int availableSeats;
 
 
-    public Flight(Airplane a, String datee, String deptL, String deptT, String arrivalL, String arrivalT, int price, String stat) {
+    public Flight(Airplane a, String ID, String datee, String deptL, String deptT, String arrivalL, String arrivalT, int price, String stat) {
         airplane = a;
+        id = ID;
         date = datee;
         departureLocation = deptL;
         departure = deptT;
@@ -88,12 +90,22 @@ public class Flight {
     }
 
 
+    public String getId() {
+        return id;
+    }
+
+
     public int getSeatPrice() {
         return seatPrice;
     }
 
     public String getDate() {
         return date;
+    }
+
+
+    public void setAvailableSeats() {
+        availableSeats--;
     }
 
 

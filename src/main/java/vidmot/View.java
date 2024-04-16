@@ -4,10 +4,9 @@ public enum View {
 
 
     MAIN("home-view.fxml"),
-    TEST("test-view.fxml"),
-    STUDY("study-view.fxml"),
     BROWSE("browse-view.fxml"),
-    CREATE("create-view.fxml");
+    BOOK("booking-view.fxml"),
+    ACCOUNT("myaccount-view.fxml");
 
     private String filename;
 
