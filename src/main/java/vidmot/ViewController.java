@@ -209,7 +209,7 @@ public class ViewController {
 
 
         for (Ticket t : loggedInUser.getTickets()) {
-            String str = t.getFlight().getAirline() + " From: " + t.getFlight().getDepartureLoc() + " To: " + t.getFlight().getArrivalLoc();
+            String str = t.getFlight().getAirline() + ", Date: " + t.getFlight().getDate() + ", From: " + t.getFlight().getDepartureLoc() + ", To: " + t.getFlight().getArrivalLoc() + ", Time: " + t.getFlight().getDepartureTime() + " - " + t.getFlight().getArrivalTime() + ", Price: " + t.getFlight().getSeatPrice();
             fxTicketList.getItems().add(str);
         }
 
@@ -791,6 +791,9 @@ public class ViewController {
         fxBookPrice.setText(String.valueOf(f.getSeatPrice()));
         fxBookSeats.setText(String.valueOf(f.getSeatCapacity()));
 
+        fxAccountName.setText(loggedInUser.getNafn());
+        fxAccountEmail.setText(loggedInUser.getEmail());
+
 
     }
 
@@ -836,8 +839,6 @@ public class ViewController {
     public void BuyTicket() {
 
         loggedInUser.addTicket(new Ticket(validFlight, loggedInUser));
-
-        validFlight.setAvailableSeats();
 
 
     }
